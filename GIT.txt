@@ -1,0 +1,225 @@
+
+		
+                 GIT
+				 
+		<GIT is a distributive version control system>
+		
+		 Advantage: Two repositories : one in local another in cloud
+		 
+		 IDE - add/commit- local Repo<Git Repo> - PUSH - cloud <Git HUB>
+		 
+		 Git HUB - fetch - git Repo -- PULL - IDE
+		 
+		 1. INSTALLATION OF GIT IN LOCAL
+		 
+		 How to install GIT
+	  	 Installing GIT on windows:
+		 --> "git-scm.com"	 
+		 ->   Downloads
+		 -> "Downloads for Windows"
+		 ->"64 Bit git for windows setup " ( for 64 bit processor )
+		 -> click
+		 Run the downloaded git.exe
+		 click YES
+		 check "on the Desktop"
+		 click next next ..
+		 click "Install	"
+		 check "Launch GIT bash"
+		 uncheck "view releas notes"
+		 click "Finish"
+		 It will be installed under "Program Files"
+	 
+		 2. Creating account and repository in GitHUb: 
+		 "https://github.com
+		 -->sign up
+		 signin
+		 "New Repository"	
+		  "Description"
+		  Check " Initialize Repository with Readme"	  
+		 -->"Create Repository"
+		 
+		 Configuration of USer Name and Email:
+		 
+		 
+		 
+		 Key process of commit and push with flow -->
+		 
+		 1.create a Folder with same name as a repo in GIThub
+		 2. select "GitBash Here" - in git cmd window type
+			git init (.git is created inside the Git Folder)
+			
+			git clone "path of the repository"
+		 3. move the files and folders physically or using windows cmd prompt to the git folder created
+		 4. type "git add *" (All the files/folders are added to local )
+		 5. type "git status"(will get the git status as changes made and folders/files added)
+		 6.type git commit -m"Comments"(all folders and files in git folder are committed to local repo)
+		 7. type git status
+		 8. type git push -u origin master (for first time / later use git push)
+		 9. type git status
+		 
+		 Key process of Pull and fetch with flow -->
+		 
+		 
+		 
+		 *** basic git commands
+		 MINGW64:/  window
+		 cd - change directory - directs to home directory
+		 cd /c - to c directory
+		 ls - gives list of all directories in cd
+		 cd foldername/ - inside the folder
+		 
+		 *configure the folder with the GIThub repository
+		 git config --global user.name "username of the git hub Account"
+		 
+		 *configure the email id with the repository
+		 git config --global user.email "email id of the git hub Account"
+		 
+		 *to clone the repository in the folder in host
+		 copy the https link from the GIThub
+		 git clone "https link from the GIThub" 
+		
+		  * To Add file/folder to the github repository
+		  git add file/folder name
+		  
+		 * To check the status of the file/folder
+		 git status
+		 
+		 * To commit the local folder / file to the GIThub repository
+		  git commit -m " Comments" file/folder name
+		  
+		 * To transfer the file/folder to GIThub repository/account
+		 git push -u origin master
+			 
+		 --------------------------------------------------------------------------------------
+		 Clone Git Repository to have a folder in host:
+		 
+		 INTEGRATE GIT WITH ECLIPSE AND PERFORM PUSH/PULL/EDIT(EXPORT/IMPORT/MODIFY):
+		 
+		 INTEGRATE GIT WITH IntelliJ Idea AND PERFORM PUSH/PULL/EDIT(EXPORT/IMPORT/MODIFY):
+	 
+		
+		
+		Note: Git Commands always in Use:
+		
+	0. Check if Git has already been installed
+		git --version
+	
+	1. Add your Git username and set your email 
+		git config --global user.name "YOUR_USERNAME"
+		
+		verify that you have the correct username:
+		git config --global user.name
+		
+		To set your email address
+		git config --global user.email "your_email_address@example.com"
+		
+		To verify that you entered your email correctly, type:
+		git config --global user.email
+	 
+	2. Check your information 
+		
+		To view the information that you entered, type:
+		git config --global --list
+		
+	3. Basic Git commands
+		
+		Go to the master branch to pull the latest changes from there
+		git checkout master
+		
+		Download the latest changes in the project <for you to work on an up-to-date copy >
+		git pull REMOTE NAME-OF-BRANCH -u
+		<REMOTE: origin) (NAME-OF-BRANCH: could be "master" or an existing branch>
+		
+		Create a branch 
+		<Spaces won't be recognized, so you will need to use a hyphen or underscore.>
+		git checkout -b NAME-OF-BRANCH
+		
+		Work on a branch that has already been created 
+		git checkout NAME-OF-BRANCH
+		
+		View the changes you've made 
+		git status
+		
+		Add changes to commit 
+		see your changes in red when you type "git status".
+
+		git add CHANGES IN RED
+		git commit -m "DESCRIBE THE INTENTION OF THE COMMIT"
+		
+		Send changes to gitlab.com 
+		git push REMOTE NAME-OF-BRANCH
+		
+		Delete all changes in the Git repository, but leave unstaged things 
+		git checkout .
+		
+		Delete all changes in the Git repository, including untracked files 
+		git clean -f
+		
+		Merge created branch with master branch
+		<You need to be in the created branch.>
+		git checkout NAME-OF-BRANCH
+		git merge master
+		
+		Merge master branch with created branch 
+		<You need to be in the master branch.>
+		git checkout master
+		git merge NAME-OF-BRANCH
+		
+		
+		GIT key takeaways:
+		
+		1. Installation in local --  GitBash/ Git Command Line
+		
+		2. Creation of an Account in GITHUB - cloud 
+		
+		3. Creation of a Repository.
+		
+		4. Create a local repo - using URL of GITHUB
+		
+		5. // CLONING - git clone url
+		
+		6. // config - A. user name - git config --global user.name"userName"
+					B. email - git config --global user.email"emailid"
+					
+		// git status - to know the status
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
